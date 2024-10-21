@@ -8,32 +8,62 @@
 }
 
 .nav {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid gainsboro;
     padding: 10px;
     position: sticky;
     top: 0px;
     z-index: 2;
+    text-align: center;
     background-color: white;
 }
 
 .main {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
     align-items: stretch;
+    padding-left: 300px;
 }
 
 .asideNav {
-    width: 450px;
-    background-color: aquamarine;
-    border-right: 1px solid black;
-    position: sticky;
+    width: 250px;
+    /* background-color: aquamarine; */
+    border-right: 2px solid gainsboro;
+    position: fixed;
+    padding-top: 50px;
     left: 0px;
-    top: 50px;
-    height: 100%;
-    z-index: 3;
+    top: 0px;
+    height: 100vh;
+    z-index: 1;
 }
 
-.content {
-    background-color: aqua;
-    overflow-y: scroll;
+.asideNav div {
+    text-align: center;
+    padding: 7px 0px;
+    margin: 5px;
+    font-weight: bold;
+    border: 2px solid gainsboro;
+}
+
+.asideNav .mainDiv:hover {
+    cursor: pointer;
+    background-color: gainsboro;
+}
+
+.asideNav .subChannelDiv h3 {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.asideNav .subChannelDiv h3:hover {
+    background-color: gainsboro;
+}
+
+.inputField {
+    padding: 5px 10px;
+    width: 350px;
+}
+
+.btn {
+    padding: 5px 10px;
 }
