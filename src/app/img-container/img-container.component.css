@@ -1,0 +1,45 @@
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    min-height: 300px;
+    /* background-color: gainsboro; */
+    border-radius: 25px;
+    margin: 15px;
+}
+
+.imgContainer:hover {
+    /* border: 2px solid gainsboro; */
+    box-shadow: 0px 1px 26px -6px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.imgContainer img {
+    height: 180px;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.imgDetail {
+    margin: 10px;
+    display: flex;
+}
+
+.imgDetail img {
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.imgCreatorContainer {
+    width: 70px;
+}
+
+.imgInfo {
+    width: 100%;
+}
+
+.imgInfo p {
+    margin: 5px 0px;
+}
