@@ -8,11 +8,16 @@
         <div class="mainDiv">Trending</div>
         <div class="mainDiv" (click)="handleChannel()">Channel</div>
         <div class="subChannelDiv" *ngIf="visibleChannel">
-            <h3 *ngFor="let channel of channels" (click)="showContent(channel)">
+            <h3 *ngFor="let channel of channels" (click)="showChannelContent(channel)">
                 {{ channel }}
             </h3>
         </div>
-        <div class="mainDiv">Categories</div>
+        <div class="mainDiv" (click)="handleCategory()" >Categories</div>
+        <div class="subCategoryDiv" *ngIf="visibleCategory">
+            <h3 *ngFor="let category of categories" (click)="showCategoryContent(category)">
+                {{ category }}
+            </h3>
+        </div>
     </div>
     <div class="main">
         <div class="content">
