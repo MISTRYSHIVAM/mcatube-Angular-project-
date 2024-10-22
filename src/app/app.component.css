@@ -59,6 +59,15 @@
     background-color: gainsboro;
 }
 
+.asideNav .subCategoryDiv h3 {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.asideNav .subCategoryDiv h3:hover {
+    background-color: gainsboro;
+}
+
 .inputField {
     padding: 5px 10px;
     width: 350px;
